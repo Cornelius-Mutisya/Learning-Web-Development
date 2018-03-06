@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,4 +41,48 @@
     </div>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <p>Please imput a number between 1 and 10</p>
+
+        <input id="num">
+        <button type="button" class="btn btn-primary" onclick="myFunction()">Submit</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction(){
+                var x, text;
+
+                //Get the value of the input field with with id="num"
+                x = document.getElementById('num').value;
+
+                //Validate
+                if (isNaN(x) || x < 1 || x > 10){
+                    
+                    text = "Invalid input!!";
+                }else{
+                    text = "Input OK";
+                }
+                document.getElementById('demo').innerHTML = text;
+                
+            }
+            
+        </script>
+
+    </div>
+    
+</body>
+>>>>>>> 33178ae9204e2ec633e36024c850c67145af8807
 </html>
