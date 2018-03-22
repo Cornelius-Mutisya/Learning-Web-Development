@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Effect</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <p id="demo"></p>
+
+    </div>
+
+    <script>
+        var i = 0;
+        var txt = "This typing effect has been created by me using HTML and JavaScript. I learned it from the w3schools website";
+        var speed = 50;
+
+        function typewriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typewriter, speed);
+            }
+        }
+    </script>
+    
+</body>
+</html>
